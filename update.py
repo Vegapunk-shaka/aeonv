@@ -28,7 +28,7 @@ basicConfig(handlers=[file_handler, stream_handler], level=INFO)
 
 load_dotenv('config.env', override=True)
 
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7428439518:AAFok2y7043MS6dZlFxzXIdda7PhGlKQ3qM')
 if len(BOT_TOKEN) == 0:
     error("BOT_TOKEN variable is missing! Exiting now")
     exit(1)
@@ -49,7 +49,7 @@ if DATABASE_URL:
 
 UPSTREAM_REPO = environ.get('UPSTREAM_REPO', '')
 if len(UPSTREAM_REPO) == 0:
-    UPSTREAM_REPO = 'https://github.com/lordgaruda/aeon-vps'
+    UPSTREAM_REPO = 'https://github.com/Vegapunk-shaka/aeonv'
 
 UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', '')
 if len(UPSTREAM_BRANCH) == 0:
